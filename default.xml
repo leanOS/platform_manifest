@@ -4,8 +4,7 @@
            fetch="https://android.googlesource.com/" />
 
   <remote  name="github"
-           fetch="git://github.com/"
-           review="https://review.slimroms.eu/"/>
+           fetch="https://github.com/"
 
   <remote  name="los"
            fetch="git://github.com/leanOS"/>
