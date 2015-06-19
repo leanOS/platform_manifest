@@ -7,11 +7,14 @@
            fetch="git://github.com/"
            review="https://review.slimroms.eu/"/>
 
+  <remote  name="los"
+           fetch="git://github.com/leanOS"/>
+
   <default revision="refs/tags/android-5.1.1_r3"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="SlimRoms/android_build" remote="github" revision="lp5.1" >
+  <project path="build" name="build" remote="los" revision="lp5.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -536,10 +539,10 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <project path="platform_manifest" name="SlimRoms/platform_manifest" remote="github" revision="lp5.1" />
+  <project path="platform_manifest" name="platform_manifest" remote="los" revision="lp5.1" />
 
   <!-- New Additions for slim -->
-  <project path="vendor/slim" name="SlimRoms/vendor_slim" remote="github" revision="lp5.1" />
+  <project path="vendor/lean" name="SlimRoms/vendor_lean" remote="los" revision="lp5.1" />
 
   <!-- Slim file manager -->
   <project path="packages/apps/SlimFileManager" name="SlimRoms/packages_apps_SlimFileManager" remote="github" revision="lp5.1" />
