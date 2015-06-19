@@ -7,7 +7,7 @@
            fetch="https://github.com/"
 
   <remote  name="los"
-           fetch="git://github.com/leanOS"/>
+           fetch="git://github.com/leanOS" />
 
   <default revision="refs/tags/android-5.1.1_r3"
            remote="aosp"
